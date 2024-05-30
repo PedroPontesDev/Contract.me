@@ -1,0 +1,54 @@
+﻿Documento de Requisitos – Contract.me
+1. Introdução
+O projeto Contract.me, desenvolvido pelo programador Pedro Henrique Pontes Santos, é uma aplicação web baseada em Spring Boot, projetada para facilitar a contratação de faxineiras para residências. A plataforma visa simplificar o processo de contratação e fornecimento de serviços de limpeza, oferecendo funcionalidades que atendem às necessidades tanto dos contratantes quanto dos prestadores de serviço. O objetivo é criar um ambiente seguro e eficiente, onde ambos os lados possam interagir, avaliar e gerenciar seus compromissos.
+2. Requisitos Funcionais
+2.1 Gerenciamento de Usuários
+    1. Cadastro de Usuários:
+        ◦ O sistema deve permitir o cadastro de contratantes (clientes) e faxineiras (prestadores de serviço), solicitando informações básicas como nome, endereço, telefone, e-mail, e senha.
+        ◦ Deve ser possível editar e excluir perfis de usuários.
+    2. Perfis de Usuários:
+        ◦ Cada usuário deve ter um perfil detalhado, incluindo informações pessoais, histórico de serviços, e avaliações.
+        ◦ As faxineiras devem poder adicionar informações sobre suas habilidades, experiência, e disponibilidade.
+        ◦ Os contratantes devem poder adicionar informações sobre suas preferências e requisitos para os serviços de limpeza.
+    3. Avaliações e Feedback:
+        ◦ Deve haver uma funcionalidade de avaliação onde contratantes possam avaliar faxineiras e vice-versa após a conclusão de um serviço.
+        ◦ As avaliações devem incluir uma nota (de 1 a 5 estrelas) e um comentário opcional.
+2.2 Gerenciamento de Serviços
+    1. Cadastro de Serviços:
+        ◦ Faxineiras devem poder listar os serviços que oferecem, incluindo descrições detalhadas, preços e disponibilidade.
+    2. Solicitação de Serviços:
+        ◦ Contratantes devem poder buscar faxineiras disponíveis com base em localização, avaliações e disponibilidade.
+        ◦ Deve ser possível solicitar um serviço específico, escolhendo data e horário.
+    3. Confirmação de Serviços:
+        ◦ Faxineiras devem poder aceitar ou recusar solicitações de serviço.
+        ◦ Notificações devem ser enviadas aos contratantes quando um serviço for confirmado ou recusado.
+2.3 Gerenciamento de Transações
+    1. Pagamentos:
+        ◦ O sistema deve integrar uma solução de pagamento online para que os contratantes possam pagar pelos serviços diretamente na plataforma.
+        ◦ Deve ser possível calcular automaticamente o valor total do serviço, incluindo taxas adicionais se aplicáveis.
+    2. Histórico de Transações:
+        ◦ Contratantes e faxineiras devem ter acesso a um histórico de transações detalhado, incluindo serviços realizados, valores pagos, e datas.
+2.4 Upload e Verificação de Documentos
+    1. Verificação de Identidade:
+        ◦ Faxineiras devem poder fazer upload de documentos pessoais para verificação (ex: RG, CPF, comprovante de residência).
+        ◦ O sistema deve permitir a verificação manual ou automática desses documentos para garantir a autenticidade.
+2.5 Notificações
+    1. Notificações por E-mail e SMS:
+        ◦ O sistema deve enviar notificações por e-mail e SMS para atualizações importantes, como confirmações de serviço, lembretes e mudanças de status.
+3. Requisitos Não Funcionais
+3.1 Desempenho
+    1. O sistema deve ser altamente responsivo, garantindo tempos de resposta rápidos mesmo em períodos de pico de uso.
+    2. Deve ser escalável para lidar com um grande volume de transações simultâneas sem comprometer o desempenho.
+3.2 Segurança
+    1. O sistema deve garantir a segurança dos dados dos usuários, incluindo medidas de criptografia e proteção contra ataques cibernéticos.
+    2. Deve ser implementado um sistema de autenticação e autorização robusto, com controle de acesso baseado em funções e permissões.
+3.3 Usabilidade
+    1. A interface do usuário deve ser intuitiva e amigável, com navegação simplificada e feedback claro para as ações realizadas.
+    2. Deve ser possível acessar o sistema a partir de dispositivos móveis, garantindo uma experiência consistente em diferentes plataformas.
+3.4 Manutenibilidade
+    1. O código-fonte deve seguir as melhores práticas de desenvolvimento, incluindo modularidade, coesão e baixo acoplamento.
+    2. Deve ser fornecida documentação abrangente do sistema, incluindo manuais de usuário e guias de desenvolvimento para facilitar a manutenção e o suporte.
+3.5 Integração com Webhooks
+    1. Deve ser implementada uma integração com Webhooks para permitir a comunicação e sincronização de dados com outras APIs, como sistemas de pagamento.
+    2. Os Webhooks devem ser configuráveis e flexíveis, permitindo a troca de informações em tempo real e a automatização de processos.
+
